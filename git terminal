@@ -1,0 +1,77 @@
+theeugene@192 GIT-TEST % git init
+Initialized empty Git repository in /Users/theeugene/Documents/GIT-TEST/.git/
+theeugene@192 GIT-TEST % git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+theeugene@192 GIT-TEST % git add .   
+theeugene@192 GIT-TEST % git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+theeugene@192 GIT-TEST % git commit -m '프로젝트 생성' 
+[main (root-commit) 4a513b2] 프로젝트 생성
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+theeugene@192 GIT-TEST % git log
+commit 4a513b2a78d418a665fce6913fac34828d4ba06c (HEAD -> main)
+Author: Hyeontjune Shim <simhj1@gmail.com>
+Date:   Thu Sep 15 10:42:51 2022 +0100
+
+    프로젝트 생성
+theeugene@192 GIT-TEST % git config --global user.name "Hyeongjune Shim"
+theeugene@192 GIT-TEST % git config --global user.email "simhj1@gmail.com"
+theeugene@192 GIT-TEST % git log
+commit 4a513b2a78d418a665fce6913fac34828d4ba06c (HEAD -> main)
+Author: Hyeontjune Shim <simhj1@gmail.com>
+Date:   Thu Sep 15 10:42:51 2022 +0100
+
+    프로젝트 생성
+theeugene@192 GIT-TEST % git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+theeugene@192 GIT-TEST % git add .
+theeugene@192 GIT-TEST % git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+theeugene@192 GIT-TEST % git log
+commit 4a513b2a78d418a665fce6913fac34828d4ba06c (HEAD -> main)
+Author: Hyeontjune Shim <simhj1@gmail.com>
+Date:   Thu Sep 15 10:42:51 2022 +0100
+
+    프로젝트 생성
+theeugene@192 GIT-TEST % git commit -m '타이틀 태그 수정'
+[main 0170d14] 타이틀 태그 수정
+ 1 file changed, 12 insertions(+)
+theeugene@192 GIT-TEST % git log
+commit 0170d1446bacc9d270fe1024d348a940fd65333e (HEAD -> main)
+Author: Hyeongjune Shim <simhj1@gmail.com>
+Date:   Thu Sep 15 10:47:48 2022 +0100
+
+    타이틀 태그 수정
+
+commit 4a513b2a78d418a665fce6913fac34828d4ba06c
+Author: Hyeontjune Shim <simhj1@gmail.com>
+Date:   Thu Sep 15 10:42:51 2022 +0100
+
+    프로젝트 생성
+theeugene@192 GIT-TEST % 
